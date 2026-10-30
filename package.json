@@ -1,1 +1,12 @@
-{"name":"prodesk-sprint-15-feature-complete","private":true,"scripts":{"install-all":"npm install && npm --prefix client install && npm --prefix server install","dev":"concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\""},"devDependencies":{"concurrently":"^9.1.2"}}
+{
+  "name": "prodesk-sprint-15-feature-complete",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && npm --prefix client install && npm --prefix server install",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
